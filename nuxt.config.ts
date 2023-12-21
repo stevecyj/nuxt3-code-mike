@@ -12,13 +12,13 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [],
-    server: {
-      proxy: {
-        "/VsWeb/api": {
-          target: "https://www.vscinemas.com.tw/",
-          changeOrigin: true,
-        },
-      },
-    },
+    // server: {
+    //   proxy: {
+    //     "/VsWeb/api": {
+    //       target: "https://www.vscinemas.com.tw/",
+    //       changeOrigin: true,
+    //     },
+    //   },
+    // },
   },
 });
