@@ -2,7 +2,9 @@
 
 <template>
   <div>
+    <AboutHeader />
     Page: foo
+    <AboutFooter />
   </div>
 </template>
 
