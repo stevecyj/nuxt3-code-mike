@@ -4,8 +4,8 @@ const { data, error, refresh } = await useFetch("/VsWeb/api/GetLstDicCinema", {
   baseURL: "https://www.vscinemas.com.tw",
   server: true,
 });
-if (error) refresh();
-console.log(data);
+// if (error) refresh();
+console.log("data =====> ", data);
 </script>
 
 <template>
