@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import Home from "@/components/Home.vue";
-const { data, error, refresh } = await useFetch(
-  "https://www.vscinemas.com.tw/GetLstDicCinema"
-);
-if (error) await refresh();
+const { data, error, refresh } = await useFetch("/VsWeb/api/GetLstDicCinema", {
+  baseURL: "http://www.vscinemas.com.tw",
+  server: true,
+});
+if (error) refresh();
 console.log(data);
 </script>
 
