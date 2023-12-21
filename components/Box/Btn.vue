@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>Home</div>
-  <Home />
-  <Box />
+  <div>
+    <button>Click</button>
+  </div>
 </template>
 
 <style lang="scss" scoped></style>
