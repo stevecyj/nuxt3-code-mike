@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Btn from "@/components/Box/Btn.vue";
+import Btn from "@/components/global/Box/Btn.vue";
 </script>
 
 <template>
