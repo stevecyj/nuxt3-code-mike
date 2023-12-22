@@ -2,6 +2,12 @@
 import Home from "@/components/Home.vue";
 const { count, addCount } = useAddCount();
 const store = useHomeStore();
+/**
+ * plugin
+ * This code imports the `$hello` function from the `useNuxtApp` module.
+ * The `$hello` function is used to perform some specific action in the Nuxt app.
+ */
+const { $hello } = useNuxtApp();
 </script>
 
 <template>
@@ -9,6 +15,7 @@ const store = useHomeStore();
   <button @click="addCount">home add count</button>
   <div>Store: {{ store.count }}</div>
   <button @click="store.add">store add count</button>
+  <h2>{{ $hello("JOJO") }}</h2>
   <Home />
   <Box />
 </template>
