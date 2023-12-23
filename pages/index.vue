@@ -9,6 +9,10 @@ const selectedDate = ref(new Date());
  * The `$hello` function is used to perform some specific action in the Nuxt app.
  */
 const { $hello } = useNuxtApp();
+const getApiData = async () => {
+  const res = await fetch("/api/hello").then((res) => res.json());
+  console.log(res);
+};
 </script>
 
 <template>
@@ -16,6 +20,8 @@ const { $hello } = useNuxtApp();
   <button @click="addCount">home add count</button>
   <div>Store: {{ store.count }}</div>
   <button @click="store.add">store add count</button>
+  <div>get api data</div>
+  <button @click="getApiData">get api data</button>
   <ClientOnly>
     <h2>{{ $hello("JOJO") }}</h2>
   </ClientOnly>
