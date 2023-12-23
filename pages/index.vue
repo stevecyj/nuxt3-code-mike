@@ -19,6 +19,7 @@ const { $hello } = useNuxtApp();
   <ClientOnly>
     <h2>{{ $hello("JOJO") }}</h2>
   </ClientOnly>
+  <NuxtLink to="/user">user</NuxtLink>
   <h2 v-timeformat="1703276522231"></h2>
   <VDatePicker v-model="selectedDate" />
   <Home />

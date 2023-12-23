@@ -1,0 +1,13 @@
+<script lang="ts" setup>
+definePageMeta({
+  middleware: (to, from) => {
+    console.log("user =====> ", { to, from });
+  },
+});
+</script>
+
+<template>
+  <div>Page: user</div>
+</template>
+
+<style scoped></style>
