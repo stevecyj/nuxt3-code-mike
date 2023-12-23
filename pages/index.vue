@@ -16,6 +16,7 @@ const { $hello } = useNuxtApp();
   <div>Store: {{ store.count }}</div>
   <button @click="store.add">store add count</button>
   <h2>{{ $hello("JOJO") }}</h2>
+  <h2 v-timeformat="1703276522231"></h2>
   <Home />
   <Box />
 </template>
