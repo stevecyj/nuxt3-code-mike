@@ -16,7 +16,9 @@ const { $hello } = useNuxtApp();
   <button @click="addCount">home add count</button>
   <div>Store: {{ store.count }}</div>
   <button @click="store.add">store add count</button>
-  <h2>{{ $hello("JOJO") }}</h2>
+  <ClientOnly>
+    <h2>{{ $hello("JOJO") }}</h2>
+  </ClientOnly>
   <h2 v-timeformat="1703276522231"></h2>
   <VDatePicker v-model="selectedDate" />
   <Home />
