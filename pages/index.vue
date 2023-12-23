@@ -8,19 +8,19 @@ const { data } = await useFetch(
   "https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorization=rdec-key-123-45678-011121314",
   {
     server: true,
-    onRequest({ request, options }) {
-      // 設置 request headers
-      options.headers = options.headers || {};
-      options.headers = {
-        ...options.headers,
-        Authorization: "Bearer token",
-      };
-      console.log(options.headers);
-    },
-    onResponse({ request, response, options }) {
-      // 處理回傳資料
-      return response._data;
-    },
+    // onRequest({ request, options }) {
+    //   // 設置 request headers
+    //   options.headers = options.headers || {};
+    //   options.headers = {
+    //     ...options.headers,
+    //     Authorization: "Bearer token",
+    //   };
+    //   console.log(options.headers);
+    // },
+    // onResponse({ request, response, options }) {
+    //   // 處理回傳資料
+    //   return response._data;
+    // },
   }
 );
 const getApiData = async () => {
