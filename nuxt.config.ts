@@ -13,5 +13,4 @@ export default defineNuxtConfig({
     dirs: ["stores"],
   },
   modules: ["@pinia/nuxt"],
-  ssr: true,
 });
