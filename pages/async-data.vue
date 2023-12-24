@@ -11,9 +11,9 @@ const onRefreshClick = async () => {
 
 <template>
   <div>
-    <div>useAsyncData</div>
     <button @click="onRefreshClick">Refresh</button>
-    {{ data }}
+    <div>useAsyncData</div>
+    <pre>{{ data }}</pre>
   </div>
 </template>
 

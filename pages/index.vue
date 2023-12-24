@@ -38,9 +38,8 @@ const getApiData = async () => {
 </script>
 
 <template>
-  {{ data }}
   <br />
-  <button @click="getDataFromUseFetch">get data from useFetch</button>
+  <button @click="getDataFromUseFetch">refresh data</button>
   <div>Home: {{ count }}</div>
   <button @click="addCount">home add count</button>
   <div>Store: {{ store.count }}</div>
@@ -51,9 +50,12 @@ const getApiData = async () => {
     <h2>{{ $hello("JOJO") }}</h2>
   </ClientOnly>
   <NuxtLink to="/user">user</NuxtLink> |
-  <NuxtLink to="/async-data">async data</NuxtLink>
+  <NuxtLink to="/async-data">async data</NuxtLink> |
+  <NuxtLink to="/alotof-fetch">a lot of fetch</NuxtLink>
   <h2 v-timeformat="1703276522231"></h2>
   <VDatePicker v-model="selectedDate" />
+  <div>data</div>
+  <pre>{{ data }}</pre>
   <Home />
   <Box />
 </template>
