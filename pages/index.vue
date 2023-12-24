@@ -10,7 +10,8 @@ const dataShow = reactive({
 });
 
 const { data, refresh } = await useFetch(
-  "https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorization=rdec-key-123-45678-011121314",
+  // "https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorization=rdec-key-123-45678-011121314",
+  "https://api.artic.edu/api/v1/artworks",
   {
     server: true,
     onRequest({ request, options }) {

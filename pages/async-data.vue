@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 const { data, refresh } = await useAsyncData("nuxt3test", () => {
-  return $fetch(
-    "https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0005-001?Authorization=rdec-key-123-45678-011121314"
-  );
+  return $fetch("https://api.artic.edu/api/v1/artworks");
 });
 
 const onRefreshClick = async () => {
